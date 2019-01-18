@@ -116,6 +116,17 @@ do {
     echo "The number is: $om1 <br>";
     $om1++;
 } while ($om1 <= 5);
+
+//for loops
+for ($x = 0; $x <= 10; $x++) {
+    echo "The number is: $x <br>";
+} 
+//foreach loops
+$colors = array("red", "green", "blue", "yellow"); 
+
+foreach ($colors as $value) {
+    echo "$value <br>";
+}
 ?>
 
 </body>
