@@ -90,6 +90,16 @@ if ($t < 10) {
     echo "Have a good night!";
 }
 
+//switch
+$favcolor = "red";
+
+switch ($favcolor) {
+    case "red":
+        echo "Your favorite color is red!";
+        break;
+        default:
+        echo "Your favorite color is neither red, blue, nor green!";
+}
 ?>
 
 </body>
