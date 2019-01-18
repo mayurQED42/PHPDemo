@@ -100,6 +100,22 @@ switch ($favcolor) {
         default:
         echo "Your favorite color is neither red, blue, nor green!";
 }
+
+//while loops
+$om = 1; 
+
+while($om <= 5) {
+    echo "The number is: $om <br>";
+    $om++;
+} 
+
+//do while loop
+$om1 = 1; 
+
+do {
+    echo "The number is: $om1 <br>";
+    $om1++;
+} while ($om1 <= 5);
 ?>
 
 </body>
