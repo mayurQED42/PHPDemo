@@ -135,6 +135,29 @@ function familyName($fname) {
 
 familyName("gajar");
 familyName("gaikwad");
+
+//indexed array
+$cars = array("Volvo", "BMW", "Toyota");
+echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+//Associative array
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+foreach($age as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+
+//array sort in ascending order
+sort($cars);
+//sort in descending order
+rsort($cars);
+//Sort Array (Ascending Order), According to Value - asort()
+asort($age);
+//Sort Array (Ascending Order), According to Key - ksort()
+ksort($age);
+//Sort Array (Descending Order), According to Value - arsort()
+arsort($age);
+//Sort Array (Descending Order), According to Key - krsort()
+krsort($age); 
 ?>
 
 </body>
