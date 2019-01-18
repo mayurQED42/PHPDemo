@@ -35,7 +35,8 @@ echo $y; // outputs 20
 //static variable
 function myTests() {
     static $a = 0;
-    echo $a;
+    echo $a;//echo
+    print $a;//print
     $a++;
 }
 
