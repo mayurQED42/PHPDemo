@@ -17,6 +17,21 @@ $color = "red";
 echo "My car is " . $color . "<br>";
 echo "My house is " . $COLOR . "<br>";
 echo "My boat is " . $coLOR . "<br>";
+//php variables
+$txt = "W3Schools.com";
+echo "I love " . $txt . "!";
+//global scope
+$x = 5;
+$y = 10;
+
+function myTest() {
+    $p=15;//local scope
+    global $x, $y;
+    $y = $x + $y +$p;
+}
+
+myTest();
+echo $y; // outputs 15
 ?>
 
 </body>
