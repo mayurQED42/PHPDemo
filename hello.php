@@ -12,6 +12,11 @@ This is a multiple-lines comment block
 that spans over multiple
 lines
 */
+//case sensitive only variables names are case sensitive while all keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions are NOT case-sensitive.
+$color = "red";
+echo "My car is " . $color . "<br>";
+echo "My house is " . $COLOR . "<br>";
+echo "My boat is " . $coLOR . "<br>";
 ?>
 
 </body>
