@@ -31,7 +31,15 @@ function myTest() {
 }
 
 myTest();
-echo $y; // outputs 15
+echo $y; // outputs 20
+//static variable
+function myTests() {
+    static $a = 0;
+    echo $a;
+    $a++;
+}
+
+myTest1();
 ?>
 
 </body>
