@@ -127,6 +127,14 @@ $colors = array("red", "green", "blue", "yellow");
 foreach ($colors as $value) {
     echo "$value <br>";
 }
+
+//php function
+function familyName($fname) {
+    echo "$fname Refsnes.<br>";
+}
+
+familyName("gajar");
+familyName("gaikwad");
 ?>
 
 </body>
