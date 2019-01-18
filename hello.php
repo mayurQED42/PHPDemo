@@ -5,6 +5,9 @@
 <h1>My first PHP page</h1>
 
 <?php
+$name=$_POST["name"];
+$email=$_POST["email"];
+echo "name:".$name."<br>email is:".$email;
 echo "Hello World!";
 // This is a single-line comment
 /*
