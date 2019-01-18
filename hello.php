@@ -79,6 +79,16 @@ echo strrev("Hello world!"); // outputs !dlrow olleH
 echo strpos("Hello world!", "world"); // outputs 6
 echo str_replace("world", "Dolly", "Hello world!"); // outputs Hello Dolly!
 
+//php if elseif else
+$t = 5;
+
+if ($t < 10) {
+    echo "Have a good morning!";
+} elseif ($t < 20) {
+    echo "Have a good day!";
+} else {
+    echo "Have a good night!";
+}
 
 ?>
 
