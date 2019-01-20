@@ -191,6 +191,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo $name;
     }
 }
+//date and time
+echo "Today is " . date("Y/m/d") . "<br>";
+echo "Today is " . date("Y.m.d") . "<br>";
+echo "Today is " . date("Y-m-d") . "<br>";
+echo "Today is " . date("l");
+echo "The time is " . date("h:i:sa");
 ?>
 </body>
 </html>
