@@ -7,6 +7,17 @@
 <?php
 $name=$_POST["name"];
 $email=$_POST["email"];
+
+//cookie
+setcookie($name,$email,time()+(86400*30));
+if(!isset($_COOKIE[$name])) {
+    echo "Cookie named '" . $name . "' is not set!";
+} else {
+    echo "Cookie '" . $name . "' is set!<br>";
+    echo "Value is: " . $_COOKIE[$name];
+}
+
+
 echo "name:".$name."<br>email is:".$email;
 echo "Hello World!";
 // This is a single-line comment
