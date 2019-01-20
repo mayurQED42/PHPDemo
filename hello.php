@@ -17,6 +17,11 @@ if(!isset($_COOKIE[$name])) {
     echo "Value is: " . $_COOKIE[$name];
 }
 
+//session
+$_SESSION["name"] = $name;
+$_SESSION["email"] = $email;
+echo "<br>Session variables are set.";
+echo "<br>name=".$_SESSION["name"]."<br>email id=".$_SESSION["email"];
 
 echo "name:".$name."<br>email is:".$email;
 echo "Hello World!";
