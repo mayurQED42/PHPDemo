@@ -23,6 +23,19 @@ $_SESSION["email"] = $email;
 echo "<br>Session variables are set.";
 echo "<br>name=".$_SESSION["name"]."<br>email id=".$_SESSION["email"];
 
+//file operation
+//file read 
+$myfile = fopen("CandidateInfo.txt", "r") or die("Unable to open file!");
+echo fread($myfile,filesize("CandidateInfo.txt"));
+fclose($myfile);
+//file write
+$myfile = fopen("CandidateInfo.txt", "w") or die("Unable to open file!");
+$txt = "John Doe\n";
+fwrite($myfile, $txt);
+$txt = "Jane Doe\n";
+fwrite($myfile, $txt);
+fclose($myfile);
+
 echo "name:".$name."<br>email is:".$email;
 echo "Hello World!";
 // This is a single-line comment
